@@ -5,7 +5,7 @@
   font-family: "Source Sans Pro", "SemiBold";
 }
 .navbar {
-  background: #131313;
+  background: #292929;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -60,18 +60,24 @@ img {
   height: 80px;
 }
 
-.navbar__links .home {
-  color: #4837ff;
-}
-
 .navbar__links {
-  color: #ffffff;
+  color: #c445f4;
+  text-align: left;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+}
+.navbar__links:hover {
+  background: #eb00ff;
+  transition: all 0.3 ease;
+  padding: 7px 3px;
+  outline: none;
+  border-radius: 8px;
 }
 
 .navbar__btn {
@@ -99,11 +105,6 @@ img {
 
 .button:hover {
   background: #4837ff;
-  transition: all 0.3 ease;
-}
-
-.navbar__links:hover {
-  color: #f77062;
   transition: all 0.3 ease;
 }
 
