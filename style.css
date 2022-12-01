@@ -58,7 +58,7 @@ img {
 }
 
 .navbar__item {
-  height: 80px;
+  height: 47px;
 }
 
 .navbar__links {
@@ -74,9 +74,9 @@ img {
   height: 100%;
 }
 .navbar__links:hover {
-  background: #eb00ff;
+  background: #eb00ff 0% 0% no-repeat padding-box;
   transition: all 0.3 ease;
-  padding: 7px 3px;
+  /* padding: 7px 3px; */
   outline: none;
   border-radius: 8px;
 }
@@ -132,7 +132,7 @@ img {
     height: 50vh;
     width: 100%;
     z-index: -1;
-    background: #131313;
+    background: #292929;
   }
 
   .navbar__menu.active {
