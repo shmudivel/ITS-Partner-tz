@@ -74,9 +74,9 @@ img {
   height: 100%;
 }
 .navbar__links:hover {
-  background: #eb00ff 0% 0% no-repeat padding-box;
+  color: #ff00ff;
+  background-color: rgba(235, 0, 255, 0.24);
   transition: all 0.3 ease;
-  /* padding: 7px 3px; */
   outline: none;
   border-radius: 8px;
 }
