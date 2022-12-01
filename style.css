@@ -3,10 +3,10 @@
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", "SemiBold";
+  background: #292929;
 }
 .navbar {
-  background: #292929;
-  height: 80px;
+  height: 106px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@
 .navbar__container {
   display: flex;
   justify-content: space-between;
+  margin-top: 33px;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -149,6 +150,10 @@ img {
 
   #navbar__logoText {
     padding-left: 25px;
+  }
+
+  .navbar__toggle {
+    height: 71px;
   }
 
   .navbar__toggle .bar {
