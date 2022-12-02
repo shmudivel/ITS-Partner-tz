@@ -3,9 +3,26 @@
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", "SemiBold";
-  background: #292929;
 }
+
+body {
+  background-color: #292929;
+  background-image: url("/images/background/Model/Model@2x.png"),
+    url("/images/background/Triangle.svg"),
+    url("/images/background/TriangleGlow.png"),
+    url("/images/background/Shadow.svg");
+  background-repeat: no-repeat;
+  background-position: top 58px center, top 320px center, top 266px center;
+}
+
 .navbar {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.78) 40%,
+    rgba(0, 0, 0, 0.17) 82%,
+    rgba(0, 0, 0, 0) 100%
+  );
   height: 106px;
   display: flex;
   justify-content: center;
@@ -39,7 +56,7 @@
   font-size: 3rem;
   color: #c445f4;
 }
-img {
+#logo {
   top: 51px;
   left: 70px;
   width: 67px;
@@ -109,6 +126,10 @@ img {
   transition: all 0.3 ease;
 }
 
+/* .main {
+  background-color: #292929;
+} */
+
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
@@ -153,7 +174,14 @@ img {
   }
 
   .navbar__toggle {
-    height: 71px;
+    /* height: 71px; */
+    padding: 1rem;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    cursor: pointer;
   }
 
   .navbar__toggle .bar {
@@ -177,7 +205,6 @@ img {
 
   #mobile-menu {
     position: absolute;
-    top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
   }
