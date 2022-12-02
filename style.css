@@ -126,9 +126,17 @@ body {
   transition: all 0.3 ease;
 }
 
-/* .main {
-  background-color: #292929;
-} */
+.main__title {
+  padding-top: 62px;
+  padding-left: 168px;
+  width: 283px;
+  height: 417px;
+}
+
+#main__video__link {
+  padding-top: 50px;
+  width: 165px;
+}
 
 @media screen and (max-width: 960px) {
   .navbar__container {
