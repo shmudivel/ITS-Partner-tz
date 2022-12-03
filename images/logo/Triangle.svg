@@ -17,7 +17,7 @@
       <stop offset="1" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <g id="Triangle" transform="translate(24.051 24.054)" opacity="1">
+  <g id="Triangle" transform="translate(24.051 24.054)" opacity="0.7">
     <path id="Top" d="M643.793,0,36.209.015,0,62.7l533.8.172L339.986,400.8l36.209,62.7Z" transform="translate(0.014 0)" fill="url(#linear-gradient)"/>
     <path id="Right" d="M542.949,0l-267.6,463.5L80.152,125.413l-73.279-.455L275.365,588.9,579.141,62.7Z" transform="translate(100.859 0)" fill="url(#linear-gradient-2)"/>
     <path id="Left" d="M303.807,530.2l72.417.016L107.732,66.275l390.223.423L533.819,4.187,0,4Z" transform="translate(0 58.694)" fill="url(#linear-gradient-3)"/>

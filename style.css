@@ -12,7 +12,7 @@ body {
     url("/images/background/TriangleGlow.png"),
     url("/images/background/Shadow.svg");
   background-repeat: no-repeat;
-  background-position: top 58px center, top 320px center, top 266px center;
+  background-position: top 58px center, top 250px center, top 190px center;
 }
 
 .navbar {
@@ -106,7 +106,7 @@ body {
   width: 100%;
 }
 
-.button {
+/* .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,8 +124,9 @@ body {
 .button:hover {
   background: #4837ff;
   transition: all 0.3 ease;
-}
+} */
 
+/* yiyle and video link */
 .main__title {
   padding-top: 62px;
   padding-left: 168px;
@@ -138,6 +139,84 @@ body {
   width: 165px;
 }
 
+/* slideshow / carousel */
+.carousel {
+  position: relative;
+  top: 210px;
+  left: 916;
+  height: 190px;
+  width: 392px;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.carousel__button--left {
+  left: -50px;
+}
+
+.carousel__button--right {
+  right: -50px;
+}
+
+.carousel__button img {
+  width: 12px;
+}
+
+.carousel__nav {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: black;
+  margin: 0 15px;
+}
+
+.carousel__indicator.current-slide {
+  background: greenyellow;
+}
+
+/* Monile  */
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
