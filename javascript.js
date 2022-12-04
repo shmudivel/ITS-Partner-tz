@@ -17,7 +17,7 @@ const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-// Slides next to one another
+// Functions & Slides next to one another
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px";
 };
@@ -90,3 +90,39 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 });
+
+// Fetch data to carousel
+function fetchData() {
+  fetch(
+    "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw Error("ERROR");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      const html = data
+        .map((nameOrPrice) => {
+          return `
+          <div class="carousel__name" >
+            <p>name: ${nameOrPrice.name}</p>
+
+
+            <p>price: ${nameOrPrice.price}</p>
+          </div>
+
+          `;
+        })
+        .join("");
+      console.log(html);
+      document.querySelector("#data").insertAdjacentHTML("afterbegin", html);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
+fetchData();
