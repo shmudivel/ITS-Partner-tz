@@ -14,8 +14,42 @@ const nextButton = document.querySelector(".carousel__button--right");
 const prevButton = document.querySelector(".carousel__button--left");
 const dotsNav = document.querySelector(".carousel__nav");
 const dots = Array.from(dotsNav.children);
+const liClassChange = document.querySelector(".carousel__slide");
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+function fetchData() {
+  fetch(
+    "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw Error("ERROR");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      let data1 = "";
+      const html = data
+        .filter((item) => item.price < 5.0)
+        .map((nameOrPrice) => {
+          console.log(nameOrPrice);
+
+          // if (element.classList.contains('carousel__slide current-slide'))
+          data1 += `
+          <li class="carousel__slide current-slide" id="data1">
+          <p>name: ${nameOrPrice.name}</p>
+          <p>price: ${nameOrPrice.price}</p>
+          </li>
+
+          `;
+        })
+        .join("");
+      console.log(data1);
+      document.querySelector("#data").insertAdjacentHTML("afterbegin", data1);
+    });
+}
+
+fetchData();
 
 // Functions & Slides next to one another
 const setSlidePosition = (slide, index) => {
@@ -89,40 +123,11 @@ dotsNav.addEventListener("click", (e) => {
 
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
+
+  // console.log(targetIndex);
+  // if (targetIndex >= 1) {
+  //   liClassChange.classList.remove("current-slide");
+  // } else {
+  //   liClassChange.classList.add("current-slide");
+  // }
 });
-
-// Fetch data to carousel
-function fetchData() {
-  fetch(
-    "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
-  )
-    .then((response) => {
-      if (!response.ok) {
-        throw Error("ERROR");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      const html = data
-        .map((nameOrPrice) => {
-          return `
-          <div class="carousel__name" >
-            <p>name: ${nameOrPrice.name}</p>
-
-
-            <p>price: ${nameOrPrice.price}</p>
-          </div>
-
-          `;
-        })
-        .join("");
-      console.log(html);
-      document.querySelector("#data").insertAdjacentHTML("afterbegin", html);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-}
-
-fetchData();
