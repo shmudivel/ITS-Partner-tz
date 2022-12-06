@@ -146,8 +146,8 @@ body {
 }
 
 .main__title {
-  /* padding-top: 62px;
-  padding-left: 168px; */
+  padding-top: 62px;
+  /* padding-left: 168px; */
   width: 283px;
   height: 0px;
 }
@@ -166,11 +166,11 @@ body {
   width: 312px;
 }
 
-.carousel__image {
+/* .carousel__image {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
+} */
 
 .carousel__track-container {
   /* background: lightgreen; */
@@ -218,6 +218,22 @@ body {
   border: 0;
   cursor: pointer;
   color: white;
+}
+
+.arrow {
+  border: solid #c445f4;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 .carousel__button--left {
