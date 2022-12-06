@@ -1,6 +1,6 @@
 // Navbar store link dropdown
 const btnStoreDropdown = document.getElementById("store__dropdown-btn");
-const btnStoreList = document.getElementById("store__dropdown-list");
+const btnStoreList = document.getElementById("store__dropdown-ul");
 btnStoreList.style.display = "none";
 btnStoreDropdown.addEventListener("click", (event) => {
   if (btnStoreList.style.display == "none") {

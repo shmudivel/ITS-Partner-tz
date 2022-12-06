@@ -103,7 +103,36 @@ body {
   border-radius: 8px;
 }
 
-/* /* .button {
+#store__dropdown-btn {
+  font-size: 1em;
+  background-color: transparent;
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  text-decoration: none;
+
+  border: none;
+  outline: none;
+}
+#store__dropdown-btn:hover {
+  color: #ff00ff;
+  background-color: rgba(235, 0, 255, 0.24);
+  transition: all 0.3 ease;
+  outline: none;
+  border-radius: 8px;
+}
+#store__dropdown-ul {
+  width: 100px;
+  text-align: left;
+  list-style: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+#store__dropdown-li {
+  padding: 10px;
+}
+
+/* .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,11 +147,10 @@ body {
   color: #fff;
 } */
 
-.button:hover {
+/* .button:hover {
   background: #4837ff;
   transition: all 0.3 ease;
-}
-*/
+} */
 
 /* yiyle and video link */
 .main {
