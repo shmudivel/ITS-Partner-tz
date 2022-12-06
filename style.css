@@ -103,15 +103,7 @@ body {
   border-radius: 8px;
 }
 
-.navbar__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-/* .button {
+/* /* .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,12 +116,13 @@ body {
   border-radius: 4px;
   background: #f77062;
   color: #fff;
-}
+} */
 
 .button:hover {
   background: #4837ff;
   transition: all 0.3 ease;
-} */
+}
+*/
 
 /* yiyle and video link */
 .main {

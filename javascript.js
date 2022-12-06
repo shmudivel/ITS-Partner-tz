@@ -1,3 +1,15 @@
+// Navbar store link dropdown
+const btnStoreDropdown = document.getElementById("store__dropdown-btn");
+const btnStoreList = document.getElementById("store__dropdown-list");
+btnStoreList.style.display = "none";
+btnStoreDropdown.addEventListener("click", (event) => {
+  if (btnStoreList.style.display == "none") {
+    btnStoreList.style.display = "block";
+  } else {
+    btnStoreList.style.display = "none";
+  }
+});
+
 // Mobile version hamburger bars
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
