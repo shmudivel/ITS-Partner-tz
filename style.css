@@ -240,6 +240,24 @@ body {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+/* STORE nav link drop down */
+
+/* .nav__store {
+  padding: 0;
+} */
+
+.arrow__store {
+  margin: 5px 15px;
+  border: solid #c445f4;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.nav__down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 
 .carousel__button--left {
   left: -50px;
