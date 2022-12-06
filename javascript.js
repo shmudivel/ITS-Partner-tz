@@ -27,8 +27,8 @@ function fetchData() {
           // if (element.classList.contains('carousel__slide current-slide'))
           return `
           <li class="carousel__slide current-slide" id="data1">
-          <p id="data__name">name: ${nameOrPrice.name}</p>
-          <p id="data__price">price: ${nameOrPrice.price}</p>
+          <p id="data__name">${nameOrPrice.name}</p>
+          <p id="data__price">${nameOrPrice.price}</p>
           </li>
 
           `;
