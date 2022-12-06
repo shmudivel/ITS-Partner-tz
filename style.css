@@ -133,7 +133,7 @@ body {
 
 /* yiyle and video link */
 .main {
-  margin: 0 100px;
+  margin: 0 70px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+
   height: 100vh;
 }
 
@@ -240,11 +240,6 @@ body {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-/* STORE nav link drop down */
-
-/* .nav__store {
-  padding: 0;
-} */
 
 .arrow__store {
   margin: 5px 15px;
@@ -260,11 +255,11 @@ body {
 }
 
 .carousel__button--left {
-  left: -50px;
+  left: -35px;
 }
 
 .carousel__button--right {
-  right: -50px;
+  right: -35px;
 }
 
 .carousel__button img {
