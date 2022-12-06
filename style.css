@@ -173,7 +173,7 @@ body {
 }
 
 .carousel__track-container {
-  background: lightgreen;
+  /* background: lightgreen; */
   color: #fff;
   height: 100%;
   position: relative;
@@ -203,6 +203,7 @@ body {
 }
 
 #data__price {
+  color: rgb(147, 147, 252);
   margin-top: 20px;
   margin-right: 10px;
   margin-left: 10px;
@@ -235,7 +236,7 @@ body {
   /* background: pink; */
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 0;
 }
 
 .carousel__indicator {
@@ -243,13 +244,13 @@ body {
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  background: black;
-  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 8px;
   cursor: pointer;
 }
 
 .carousel__indicator.current-slide {
-  background: greenyellow;
+  background: rgb(255, 255, 255);
 }
 
 .is-hidden {
