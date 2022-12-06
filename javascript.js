@@ -35,8 +35,6 @@ function fetchData() {
         .filter((item) => item.price < 5.0)
         .map((nameOrPrice) => {
           console.log(nameOrPrice);
-
-          // if (element.classList.contains('carousel__slide current-slide'))
           return `
           <li class="carousel__slide current-slide" id="data1">
           <p id="data__name">${nameOrPrice.name}</p>
@@ -56,13 +54,7 @@ function fetchData() {
       const prevButton = document.querySelector(".carousel__button--left");
       const dotsNav = document.querySelector(".carousel__nav");
       const dots = Array.from(dotsNav.children);
-      // const liClassChange = document.querySelector(".carousel__slide");
 
-      // Functions & Slides next to one another
-      // const setSlidePosition = (slide, index) => {
-      //   slide.style.left = slideWidth * index + "px";
-      // };
-      // slides.forEach(setSlidePosition);
       slides[0].style.left = 0;
       slides[1].style.left = "400px";
       slides[2].style.left = "800px";
@@ -133,15 +125,7 @@ function fetchData() {
 
         updateDots(currentDot, targetDot);
         hideShowArrows(slides, prevButton, nextButton, targetIndex);
-
-        // console.log(targetIndex);
-        // if (targetIndex >= 1) {
-        //   liClassChange.classList.remove("current-slide");
-        // } else {
-        //   liClassChange.classList.add("current-slide");
-        // }
       });
-      console.log(slides);
     });
 }
 
