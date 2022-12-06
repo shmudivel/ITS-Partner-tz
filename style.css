@@ -127,11 +127,29 @@ body {
 } */
 
 /* yiyle and video link */
+.main {
+  margin: 0 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+  height: 100vh;
+}
+
 .main__title {
-  padding-top: 62px;
-  padding-left: 168px;
+  /* padding-top: 62px;
+  padding-left: 168px; */
   width: 283px;
-  height: 417px;
+  height: 0px;
 }
 
 #main__video__link {
@@ -142,11 +160,10 @@ body {
 /* slideshow / carousel */
 .carousel {
   position: relative;
-  top: 210px;
-  left: 916px;
-  height: 190px;
-  width: 392px;
-  margin: 0 auto;
+  top: 104px;
+
+  height: 158px;
+  width: 312px;
 }
 
 .carousel__image {
@@ -157,14 +174,14 @@ body {
 
 .carousel__track-container {
   background: lightgreen;
+  color: #fff;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .carousel__track {
-  padding: 0;
-  margin: 0;
+  /* padding: 0; */
   list-style: none;
   position: relative;
   height: 100%;
@@ -176,6 +193,16 @@ body {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+#data__name {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#data__price {
+  margin-top: 10px;
+  text-align: right;
 }
 
 .carousel__button {
@@ -201,7 +228,7 @@ body {
 }
 
 .carousel__nav {
-  background: pink;
+  /* background: pink; */
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -210,8 +237,8 @@ body {
 .carousel__indicator {
   border: 0;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
   background: black;
   margin: 0 15px;
   cursor: pointer;
